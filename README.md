@@ -2,7 +2,7 @@
 
 - Vue3
 - JavaScript
-- Tailwind : +autoprefixer postcss
+- UnoCSS
 - Eslint: +@antfu/eslint-config
 - Vue Router
 - Pinia

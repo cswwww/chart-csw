@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-full overflow-auto bg-blue-950 grid grid-cols-4 gap-2 [&>*]:w-full [&>*]:h-60 p-10 [&>*]:border [&>*]:border-blue-200">
+  <div class="ccc">
     <!-- <chart-0 /> -->
     <chart-1 />
     <chart-2 />
@@ -16,3 +16,12 @@
     <chart-13 />
   </div>
 </template>
+
+<style scoped>
+.ccc {
+  @apply p-10  bg-blue-950 grid grid-cols-4 gap-2;
+  div {
+    @apply w-full h-15rem border border-solid border-blue-200;
+  }
+}
+</style>
