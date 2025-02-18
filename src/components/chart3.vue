@@ -1,7 +1,7 @@
 <!--
  * @Date: 2022-08-08 10:26:39
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-12-13 16:24:03
+ * @LastEditTime: 2025-02-18 15:45:20
  * @FilePath: \chart-csw\src\components\chart3.vue
  * @Description: 带装饰环的圆环饼图
  * @Ref: https://echarts.apache.org/examples/zh/editor.html?c=line-sections
@@ -88,9 +88,7 @@ const chartOptions = markRaw({
       type: 'pie',
       silent: true,
       label: {
-        normal: {
-          show: false,
-        },
+        show: false,
       },
       radius: [normalRadius, BigRadius], // 半径
       center: ['30%', '55%'], // 位置
@@ -117,8 +115,8 @@ const chartOptions = markRaw({
         hideOverlap: false,
       },
       data: props.chartData,
-      itemStyle: {
-        emphasis: {
+      emphasis: {
+        itemStyle: {
           shadowBlur: 10,
           shadowOffsetX: 0,
           shadowColor: 'rgba(0, 0, 0, 0.5)',

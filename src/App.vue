@@ -14,6 +14,8 @@
     <chart-11 />
     <chart-12 />
     <chart-13 />
+    <chart-14 />
+    <chart-15 />
   </div>
 </template>
 

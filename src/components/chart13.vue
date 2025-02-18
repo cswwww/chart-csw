@@ -1,7 +1,7 @@
 <!--
  * @Date: 2022-08-08 10:26:39
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2025-01-02 16:00:49
+ * @LastEditTime: 2025-02-18 15:46:31
  * @FilePath: \chart-csw\src\components\chart13.vue
  * @Description: 台区覆冰厚度
 -->
@@ -69,9 +69,7 @@ const chartOptions = {
     axisLabel: {
       color: '#000',
       interval: 0,
-      textStyle: {
-        fontSize: 12,
-      },
+      fontSize: 12,
       formatter: '{value}',
       // rotate: 90, // 旋转角度
     },

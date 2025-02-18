@@ -1,8 +1,8 @@
 <!--
  * @Date: 2022-08-08 10:26:39
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-10-07 20:52:12
- * @FilePath: \zhuhai-web\src\components\charts\chart1.vue
+ * @LastEditTime: 2025-02-18 15:43:44
+ * @FilePath: \chart-csw\src\components\chart1.vue
  * @Description: 简易折线图
  * @Ref: https://echarts.apache.org/examples/zh/editor.html?c=line-sections
 -->
@@ -35,7 +35,6 @@ const chartOptions = {
     right: 5,
     textStyle: {
       color: '#909399',
-      fontWeight: 'normal',
       fontSize: 12,
     },
   },
@@ -57,9 +56,7 @@ const chartOptions = {
       axisLabel: {
         color: '#e2e9ff',
         interval: 0,
-        textStyle: {
-          fontSize: 12,
-        },
+        fontSize: 12,
       },
     },
   ],
@@ -89,35 +86,31 @@ const chartOptions = {
       data: props.yAxis,
       barWidth: '20px',
       itemStyle: {
-        normal: {
-          color: new echarts.graphic.LinearGradient(
-            0,
-            0,
-            0,
-            1,
-            [
-              {
-                offset: 0,
-                color: 'rgba(0,244,255,1)', // 0% 处的颜色
-              },
-              {
-                offset: 1,
-                color: 'rgba(0,77,167,1)', // 100% 处的颜色
-              },
-            ],
-            false,
-          ),
-          barBorderRadius: [30, 30, 0, 0],
-          shadowColor: 'rgba(0,160,221,1)',
-          shadowBlur: 4,
-        },
+        color: new echarts.graphic.LinearGradient(
+          0,
+          0,
+          0,
+          1,
+          [
+            {
+              offset: 0,
+              color: 'rgba(0,244,255,1)', // 0% 处的颜色
+            },
+            {
+              offset: 1,
+              color: 'rgba(0,77,167,1)', // 100% 处的颜色
+            },
+          ],
+          false,
+        ),
+        borderRadius: [30, 30, 0, 0],
+        shadowColor: 'rgba(0,160,221,1)',
+        shadowBlur: 4,
       },
       label: {
-        normal: {
-          show: true,
-          position: 'top',
-          color: '#e2e9ff',
-        },
+        show: true,
+        position: 'top',
+        color: '#e2e9ff',
       },
     },
   ],

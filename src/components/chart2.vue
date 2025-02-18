@@ -1,8 +1,8 @@
 <!--
  * @Date: 2022-08-08 10:26:39
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-10-08 09:04:28
- * @FilePath: \zhuhai-web\src\components\charts\chart2.vue
+ * @LastEditTime: 2025-02-18 15:45:02
+ * @FilePath: \chart-csw\src\components\chart2.vue
  * @Description: 简易折线图
  * @Ref: https://echarts.apache.org/examples/zh/editor.html?c=line-sections
 -->
@@ -88,9 +88,7 @@ const chartOptions = {
       data: props.yAxis3,
       barWidth: '20px',
       itemStyle: {
-        normal: {
-          color: '#4E31AA',
-        },
+        color: '#4E31AA',
       },
       type: 'bar',
       stack: 'a',
@@ -100,9 +98,7 @@ const chartOptions = {
       data: props.yAxis2,
       barWidth: '20px',
       itemStyle: {
-        normal: {
-          color: '#47D468',
-        },
+        color: '#47D468',
       },
       type: 'bar',
       stack: 'a',
@@ -112,9 +108,7 @@ const chartOptions = {
       data: props.yAxis1,
       barWidth: '20px',
       itemStyle: {
-        normal: {
-          color: '#03B8BD',
-        },
+        color: '#03B8BD',
       },
       type: 'bar',
       stack: 'a',
