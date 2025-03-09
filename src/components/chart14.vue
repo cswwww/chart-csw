@@ -1,7 +1,7 @@
   <!--
  * @Date: 2022-08-08 10:26:39
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2025-02-18 11:18:57
+ * @LastEditTime: 2025-02-25 15:56:27
  * @FilePath: \chart-csw\src\components\chart14.vue
  * @Description: 简易折线图
  * @Ref: https://echarts.apache.org/examples/zh/editor.html?c=line-sections
@@ -181,7 +181,10 @@ function initChart() {
                   color: '#E9FCE9', // 绿色
                   // borderWidth: 1,
                   // borderType: 'dashed',
-                  opacity: 0.3,
+                  opacity: 1,
+                  emphasis: { // 重点：禁用高亮时的透明度变化
+                    opacity: 1, // 保持与原透明度一致
+                  },
                 },
               },
               {
@@ -195,7 +198,10 @@ function initChart() {
                   color: '#FFDACC',
                   // borderWidth: 1,
                   // borderType: 'dashed',
-                  opacity: 0.3,
+                  opacity: 1,
+                  emphasis: { // 重点：禁用高亮时的透明度变化
+                    opacity: 1, // 保持与原透明度一致
+                  },
                 },
               },
               {
@@ -209,8 +215,11 @@ function initChart() {
                   color: '#FFCCCC',
                   // borderWidth: 1,
                   // borderType: 'dashed',
-                  opacity: 0.3,
-
+                  opacity: 1,
+                  emphasis: { // 重点：禁用高亮时的透明度变化
+                    opacity: 1, // 保持与原透明度一致
+                    color: '#FFCCCC',
+                  },
                 },
               },
               {
@@ -219,6 +228,14 @@ function initChart() {
             ],
             //  如果有多种颜色，就继续在这里写区间数组，复制上面的下来改颜色
           ],
+          itemStyle: {
+            opacity: 1,
+            emphasis: {
+              opacity: 1, // 保持透明度不变
+            },
+          },
+          // 可选：阻止触发任何交互事件（如Tooltip）
+          silent: true,
         },
         markLine: {
           silent: true,
