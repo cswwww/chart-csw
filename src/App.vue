@@ -17,6 +17,10 @@
     <chart-14 />
     <chart-15 />
   </div>
+
+  <div class="w-full h-full">
+    <chart-16 />
+  </div>
 </template>
 
 <style scoped>
